@@ -1,0 +1,1726 @@
+<!-------------
+
+Make sure to turn OFF WYSIWYG, and turn ON code editor
+
+COLORS USED:
+
+  TEXT SHADOW: #015c5c
+  MAIN ACCENT: #008282
+  SECONDARY ACCENT: #02abab
+  Use ctrl + f to quickly change colors!
+
+--------------->
+
+<div class="container-fluid card border-0 py-5">
+    <div class="container p-0" style="max-width: 1100px; font-size: 8.5pt; font-family: 'Courier New', monospace; letter-spacing: 0.2px;">
+        <div class="row" style="min-height: 550px; border-radius: 4em; overflow: hidden;">
+            
+    <!------------- SIDE IMAGE - change 'URLHERE' for the BACKGROUND image of your choice ------------->
+            <div
+                class="col-12 col-lg-5 bg-faded align-items-end"
+                style="
+                    min-height: 400px;
+
+                    background-image: url(https://picsum.photos/2000/1800);
+                    background-size: cover;
+                    background-position: center;
+                "
+            >
+                <!------------- CHARACTER SPRITE - may need to be resixed depending on your image size. Change 'background-size: 400px;' to whatever size fits your image best ------------->
+                <div class="col-lg-12" style="display: flex; flex-direction: column;">
+                    <div
+                        class="card border-0"
+                        style="
+                            background: url(https://f2.toyhou.se/file/f2-toyhou-se/images/85515815_7c6OwFKwdzRwqg4.png);
+                            background-repeat: no-repeat;
+                            background-size: 400px;
+                            background-position: bottom;
+                            height: 620px;
+                            margin-top: auto;
+                        "
+                    ></div>
+                </div>
+                <!------------- CHARACTER SPRITE END ------------->
+
+                <!------------- DIALOGUE BOX ------------->
+                <div class="col-12 px-3" style="position: absolute; bottom: 30px; right: 0px;">
+                    <div class="card p-0 border-1 rounded-3 text-white mb-2" style="background-color: #ffffff; border: solid 5px #e90014; box-shadow: 7px 7px rgba(0, 0, 0, 0.3);">
+                        <div class="no-gutters m-0 p-0" style="background-color: #e90014;">
+                            <p class="text-left m-0 p-0" style="color: black; font-size: 15px; font-weight: bold;">
+                                <!-- character handle ------->
+                                <b class="p-3 small" style="color: black;"><span style="color: #fff; font-weight: 900;">
+                                    
+                                    trolling: pesterchumHandle
+                                    
+                                    </span></b>
+                            </p>
+                        </div>
+                        <!------------- DIALOGUE BOX CAROUSEL ------------->
+                        <div id="carouselTalk" style="height: 80px; overflow: auto;" class="carousel slide carousel-fade px-2" data-ride="false" data-pause="true">
+                            <div class="carousel-inner">
+                                <!------------- DIALOGUE BOX ONE - remember, keep it short ------------->
+                                <div class="carousel-item active">
+                                    <p class="p-2" style="letter-spacing: 0.6px;">
+                                        <span style="color: #008282; font-weight: bold; font-size: larger;">
+                                            TH1S 1S 4 BOX FOR SOM3 N34T T3XT!!! It works great to show off your character's typing quirk. It scrolls, but try to keep it short.
+                                        </span>
+                                    </p>
+                                </div>
+                                <!------------- DIALOGUE BOX ONE END ------------->
+
+                                <!------------- DIALOGUE BOX TWO ------------->
+                                <div class="carousel-item">
+                                    <p class="p-2" style="letter-spacing: 0.6px;">
+                                        <span style="color: #008282; font-weight: bold; font-size: larger;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </span>
+                                    </p>
+                                </div>
+                                <!------------- DIALOGUE BOX TWO END ------------->
+
+                                <!------------- DIALOGUE BOX THREE ------------->
+                                <div class="carousel-item">
+                                    <p class="p-2" style="letter-spacing: 0.6px;">
+                                        <span style="color: #008282; font-weight: bold; font-size: larger;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </span>
+                                    </p>
+                                </div>
+                                <!------------- DIALOGUE BOX THREE END ------------->
+
+                            </div>
+                        </div>
+                        <!------------- DIALOGUE CAROUSEL END ------------->
+
+                        <!------------- CAROUSEL BUTTON - do not edit ------------->
+                        <p class="text-right px-3 pb-1">
+                            <a href="#carouselTalk" data-slide="next"><i class="fas fa-caret-down fa-2xl" style="animation: fa-bounce 3s infinite;"></i> </a>
+                        </p>
+                        <!------------- CAROUSEL BUTTON END ------------->
+                    </div>
+                </div>
+            </div>
+
+            <!------------- NAVIGATION BUTTONS - best not to fiddle with these ------------->
+            <div class="col-12 col-lg">
+                <div class="row">
+                    <div class="col-12 justify-content-center" style="background: #008282;">
+                        <ul class="nav row no-gutters align-items-center justify-content-around my-1 my-lg-auto">
+                            <!-- NAV 1 -->
+                            <li class="nav-item align-items-center justify-content-center p-1">
+                                <a class="nav-link active btn btn-outline-danger border-0" style="mix-blend-mode: luminosity; height: 40px; width: 40px; z-index: 2; opacity: 0.15;" data-toggle="tab" href="#intro"></a>
+                                <i class="far fa-user fa-fw fa-2x" style="color: #fff; position: absolute;"></i>
+                            </li>
+
+                            <!-- NAV 2 -->
+                            <li class="nav-item align-items-center justify-content-center p-1">
+                                <a class="nav-link btn btn-outline-danger border-0" style="mix-blend-mode: luminosity; height: 40px; width: 40px; z-index: 2; opacity: 0.15;" data-toggle="tab" href="#stats"></a>
+                                <i class="far fa-sliders fa-fw fa-2x" style="color: #fff; position: absolute;"></i>
+                            </li>
+
+                            <!-- NAV 3 -->
+                            <li class="nav-item align-items-center justify-content-center p-1">
+                                <a class="nav-link btn btn-outline-danger border-0" style="mix-blend-mode: luminosity; height: 40px; width: 40px; z-index: 2; opacity: 0.15;" data-toggle="tab" href="#refs"></a>
+                                <i class="far fa-paintbrush-pencil fa-fw fa-2x" style="color: #fff; position: absolute;"></i>
+                            </li>
+
+                            <!-- NAV 4 -->
+                            <li class="nav-item align-items-center justify-content-center p-1">
+                                <a class="nav-link btn btn-outline-danger border-0" style="mix-blend-mode: luminosity; height: 40px; width: 40px; z-index: 2; opacity: 0.15;" data-toggle="tab" href="#strife"></a>
+                                <i class="far fa-sword fa-fw fa-2x" style="color: #fff; position: absolute;"></i>
+                            </li>
+
+                            <!-- NAV 5-->
+                            <li class="nav-item align-items-center justify-content-center p-1">
+                                <a class="nav-link btn btn-outline-danger border-0" style="mix-blend-mode: luminosity; height: 40px; width: 40px; z-index: 2; opacity: 0.15;" data-toggle="tab" href="#story"></a>
+                                <i class="far fa-books fa-fw fa-2x" style="color: #fff; position: absolute;"></i>
+                            </li>
+
+                            <!-- NAV 6-->
+                            <li class="nav-item align-items-center justify-content-center p-1">
+                                <a class="nav-link btn btn-outline-danger border-0" style="mix-blend-mode: luminosity; height: 40px; width: 40px; z-index: 2; opacity: 0.15;" data-toggle="tab" href="#relationships"></a>
+                                <i class="far fa-heart fa-fw fa-2x" style="color: #fff; position: absolute;"></i>
+                            </li>
+                        </ul>
+                    </div>
+<div class="h-100">
+                    <div class="col-12 p-0">
+                        <div class="tab-content">
+<!------------- 
+
+TAB ONE - BASICS TAB
+
+------------->
+                            <div class="tab-pane fade in active show" id="intro">
+                                <!------------- HEADER ------------->
+                                <div class="p-0" style="min-height: 68px;">
+                                    <div class="row no-gutters">
+                                        <div class="col mr-n3 align-items-center justify-content-center" style="border-radius: 0 0 0; background: #008282; text-shadow: 0.15rem 0.15rem 0rem #015c5c;">
+                                            <p class="text-white text-uppercase font-weight-bold font-family:berlin-sans; m-2 display-4">
+                                                
+                                                CHARACTER NAME
+                                                
+                                            </p>
+                                        </div>
+                                    <!------------- HEADER END ------------->
+                                        <div class="col-md-12 bg-faded pl-3 pr-3" style="height: 509px; overflow: auto;">
+                                            <div class="row no-gutters">
+                                                
+                                                <!-- QUOTE -->
+
+                                                <div class="col-12 card p-2 px-5 my-2 text-center">
+                                                    <i class="fad fa-quote-left" style="position: absolute; left: 12px; top: 12px; color: #008282;"></i>
+                                                    
+                                                    <p>This is a quote, <span style="color: #02abab; font-weight: 700;">this is accent text</span>. Remember, keep it short!</p>
+                                                    
+                                                    <i class="fad fa-quote-right" style="position: absolute; right: 12px; bottom: 12px; color: #008282;"></i>
+                                                </div>
+                                                
+                                                <!------------- STATS ------------->
+
+                                                <div class="row no-gutters">
+                                                    
+                                                    <!-- GENDER -->
+                                                    <div class="col-12 col-lg-4 p-2">
+                                                        <div class="row no-gutters">
+                                                            <div class="col-auto align-items-center justify-content-center">
+                                                                <div class="d-flex justify-content-center align-items-center mr-2 text-muted rounded" style="height: 35px; width: 35px; background: #008282;">
+                                                                    <i class="fal fa-venus-mars fa-fw" style="color: #fff; font-size: 20px;"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col text-uppercase">
+                                                                <p class="mb-n2" style="font-size: 16px;">
+                                                                    Content
+                                                                </p>
+                                                                <span class="small" style="color: #02abab;">
+                                                                    gender
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- PRONOUNS -->
+                                                    <div class="col-12 col-lg-4 p-2">
+                                                        <div class="row no-gutters">
+                                                            <div class="col-auto align-items-center justify-content-center">
+                                                                <div class="d-flex justify-content-center align-items-center mr-2 text-muted rounded" style="height: 35px; width: 35px; background: #008282;">
+                                                                    <i class="fal fa-comment-dots fa-fw" style="color: #fff; font-size: 20px;"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col text-uppercase">
+                                                                <p class="mb-n2" style="font-size: 16px;">
+                                                                    PRO/NOUNS
+                                                                </p>
+                                                                <span class="small" style="color: #02abab;">
+                                                                    pronouns
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- ORIENTATION -->
+                                                    <div class="col-12 col-lg-4 p-2">
+                                                        <div class="row no-gutters">
+                                                            <div class="col-auto align-items-center justify-content-center">
+                                                                <div class="d-flex justify-content-center align-items-center mr-2 text-muted rounded" style="height: 35px; width: 35px; background: #008282;">
+                                                                    <i class="fal fa-heartbeat fa-fw" style="color: #fff; font-size: 20px;"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col text-uppercase">
+                                                                <p class="mb-n2" style="font-size: 16px;">
+                                                                    Content
+                                                                </p>
+                                                                <span class="small" style="color: #02abab;">
+                                                                    sexuality
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- AGE -->
+                                                    <div class="col-12 col-lg-4 p-2">
+                                                        <div class="row no-gutters">
+                                                            <div class="col-auto align-items-center justify-content-center">
+                                                                <div class="d-flex justify-content-center align-items-center mr-2 text-muted rounded" style="height: 35px; width: 35px; background: #008282;">
+                                                                    <i class="fal fa-hourglass fa-fw" style="color: #fff; font-size: 20px;"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col text-uppercase">
+                                                                <p class="mb-n2" style="font-size: 16px;">
+                                                                    XX SWEEPS
+                                                                </p>
+                                                                <span class="small" style="color: #02abab;">
+                                                                    age
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- LUNAR SWAY -->
+                                                    <div class="col-12 col-lg-4 p-2">
+                                                        <div class="row no-gutters">
+                                                            <div class="col-auto align-items-center justify-content-center">
+                                                                <div class="d-flex justify-content-center align-items-center mr-2 text-muted rounded" style="height: 35px; width: 35px; background: #008282;">
+                                                                    <i class="fal fa-moon fa-fw" style="color: #fff; font-size: 20px;"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col text-uppercase">
+                                                                <p class="mb-n2" style="font-size: 16px;">
+                                                                    Content
+                                                                </p>
+                                                                <span class="small" style="color: #02abab;">
+                                                                    lunar sway
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- SIGIL -->
+                                                    <div class="col-12 col-lg-4 p-2">
+                                                        <div class="row no-gutters">
+                                                            <div class="col-auto align-items-center justify-content-center">
+                                                                <div class="d-flex justify-content-center align-items-center mr-2 text-muted rounded" style="height: 35px; width: 35px; background: #008282;">
+                                                                    <i class="fal fa-star-shooting fa-fw" style="color: #fff; font-size: 20px;"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col text-uppercase">
+                                                                <p class="mb-n2" style="font-size: 16px;">
+                                                                    Content
+                                                                </p>
+                                                                <span class="small" style="color: #02abab;">
+                                                                    sigil
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- CASTE -->
+                                                    <div class="col-12 col-lg-4 p-2">
+                                                        <div class="row no-gutters">
+                                                            <div class="col-auto align-items-center justify-content-center">
+                                                                <div class="d-flex justify-content-center align-items-center mr-2 text-muted rounded" style="height: 35px; width: 35px; background: #008282;">
+                                                                    <i class="fal fa-droplet fa-fw" style="color: #fff; font-size: 20px;"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col text-uppercase">
+                                                                <p class="mb-n2" style="font-size: 16px;">
+                                                                    Content
+                                                                </p>
+                                                                <span class="small" style="color: #02abab;">
+                                                                    blood caste
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- SCREEN NAME -->
+                                                    <div class="col-12 col-lg-4 p-2">
+                                                        <div class="row no-gutters">
+                                                            <div class="col-auto align-items-center justify-content-center">
+                                                                <div class="d-flex justify-content-center align-items-center mr-2 text-muted rounded" style="height: 35px; width: 35px; background: #008282;">
+                                                                    <i class="fal fa-face-smile-horns fa-fw" style="color: #fff; font-size: 20px;"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col text-uppercase">
+                                                                <p class="mb-n2" style="font-size: 16px;">
+                                                                    Content
+                                                                </p>
+                                                                <span class="small" style="color: #02abab;">
+                                                                    screen name
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- OCCUPATION -->
+                                                    <div class="col-12 col-lg-4 p-2">
+                                                        <div class="row no-gutters">
+                                                            <div class="col-auto align-items-center justify-content-center">
+                                                                <div class="d-flex justify-content-center align-items-center mr-2 text-muted rounded" style="height: 35px; width: 35px; background: #008282;">
+                                                                    <i class="fal fa-suitcase fa-fw" style="color: #fff; font-size: 20px;"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col text-uppercase">
+                                                                <p class="mb-n2" style="font-size: 16px;">
+                                                                    Content
+                                                                </p>
+                                                                <span class="small" style="color: #02abab;">
+                                                                    occupation
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- DIVIDER -->
+
+                                            <div class="justify-content-between my-2">
+                                                <hr class="w-100" />
+                                                <span class="col pt-2 px-3 py-0">
+                                                    <i class="fa-solid fa-moon-stars my-auto fa-lg"></i>
+                                                </span>
+                                                <hr class="w-100" />
+                                            </div>
+
+                                            <!-- INTRODUCTION PARAGRAPH -->
+
+                                            <p class="text-justify my-3">
+                                                <span class="float-left py-1 px-2 mr-2 card border-0" style="background: #02abab; font-size: 1.5em; font-weight: 700;">L</span>
+                                                orem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                <span style="color: #02abab; font-weight: 700;">accent text</span>
+                                                <em>italics</em>
+                                                <strong>bold text</strong>
+                                                <strike>strikethrough text</strike>. Duis sollicitudin elit sed tellus blandit viverra sed eget odio. Donec accumsan tempor lacus, et venenatis elit feugiat non. Duis porta eros et velit
+                                                blandit dapibus. Curabitur ac finibus eros. Duis placerat velit vitae massa sodales, eget mattis nibh pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </p>
+
+                                            <!------------- LIKES / DISLIKES / HOBBIES ------------->
+                                            
+                                            <div class="row">
+                                                <div class="col-md-4 mb-3">
+                                                    <p class="text-uppercase" style="letter-spacing: 0.5px; font-size: 12pt; font-weight: bold;"><i class="far fa-heartbeat fa-fw" style="color: #02abab;"></i> 
+                                                    Likes
+                                                    
+                                                    </p>
+                                                    <ul class="mb-0">
+                                                        
+                                                        <li>One.</li>
+                                                        <li>Two.</li>
+                                                        <li>Three.</li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-4 mb-2">
+                                                    <p class="text-uppercase" style="letter-spacing: 0.5px; font-size: 12pt; font-weight: bold;"><i class="far fa-ban fa-fw" style="color: #02abab;"></i> 
+                                                    
+                                                    Dislikes
+                                                    
+                                                    </p>
+                                                    <ul class="mb-0">
+                                                        
+                                                        <li>One.</li>
+                                                        <li>Two.</li>
+                                                        <li>Three.</li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-4 mb-2">
+                                                    <p class="text-uppercase" style="letter-spacing: 0.5px; font-size: 12pt; font-weight: bold;"><i class="far fa-plus fa-fw" style="color: #02abab;"></i> 
+                                                    
+                                                    Hobbies
+                                                    
+                                                    </p>
+                                                    <ul class="mb-0">
+                                                        
+                                                        <li>One.</li>
+                                                        <li>Two.</li>
+                                                        <li>Three.</li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!------------- MUSIC PLAYER ------------->
+
+                                        <div class="col-12 p-0">
+                                            <div class="row no-gutters">
+                                                <div class="col mr-n3" style="border-radius: 0 0 6em 0; background: #008282;">
+                                                    <div class="row no-gutters" style="min-height: 60px;">
+                                                        <div class="d-flex col-auto align-items-center justify-content-center p-2">
+                                                            <i class="fal fa-compact-disc fa-2x fa-spin" style="position: absolute;"></i>
+                                                            <div class="card border-0" style="width: 32px; height: 32px; overflow: hidden; background: none; position: relative;">
+                                                                <iframe style="opacity: 0.001; height: 500%; width: 650%; position: absolute; bottom: -2px; left: -2px;" src="https://www.youtube.com/embed/yg41u9AejSs"></iframe>
+                                                                <!-- YOUTUBE EMBED == INSERT VIDEO ID HERE ^ -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col h-100 text-center font-italic mt-2">
+                                            <!------------- SONG TITLE HERE ------------->
+                                                            <p class="font-weight:bold">
+                                                    SONG TITLE
+                                                    
+                                                            </p>
+                                                            <hr class="mb-2 mx-2 mt-1 bg-white" style="opacity: 0.4; margin-top: 2px;" />
+                                                            
+                                            <!------------- MUSIC ALBUM OR ARTIST  ------------->
+                                                            <i class="text-uppercase" style="font-size: 11px;">
+                                                                
+                                                                Song Artist
+                                                                
+                                                            </i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+<!------------- 
+
+TAB TWO - PERSONALITY TAB
+
+------------->
+                            <div class="tab-pane fade" id="stats">
+                                <!------------- HEADER ------------->
+                                <div class="p-0 bg-faded" style="height: 68px; border-radius: 0 5em 0 0;">
+                                    <div class="row no-gutters">
+                                        <div class="col align-items-center justify-content-center" style="border-radius: 0 0 0 0; background: #008282; text-shadow: 0.15rem 0.15rem 0rem #015c5c;">
+                                            <p class="text-white text-uppercase font-weight-bold font-family:berlin-sans; m-2 display-4">
+                                                
+                                                Personality
+                                                
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------- HEADER END ------------->
+                                <div class="col-md-12 bg-faded pl-3 pr-3" style="height: 495px; overflow: auto;">
+                                    <p class="p-0 mb-0" style="font-size: 2em; font-variant: small-caps; font-weight: bold;">
+                                        <!-- CHARACTER SPRITE - replace 'URLHERE'-->
+                                        <img
+                                            src="https://picsum.photos/500"
+                                            
+                                            class="float-md-right pl-md-4 mb-0 d-block mx-auto card border-0 rounded-0"
+                                            style="background: none; max-height: 120px; z-index: 10;"
+                                        />
+
+                                        <i class="far fa-brain-circuit" style="color: #02abab;"></i>
+
+                                        DEMEANOR
+                                        
+                                    </p>
+
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet, consec ctetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio. Donec accumsan tempor lacus, et venenatis elit feugiat non. Duis porta eros
+                                        et velit blandit dapibus. Curabitur ac finibus eros. Duis placerat velit vitae massa sodales.
+                                    </p>
+
+                                    <!-- DIVIDER -->
+
+                                    <div class="justify-content-between my-2">
+                                        <hr class="w-100" />
+                                        <span class="col pt-2 px-3 py-0">
+                                            <i class="fa-solid fa-moon-stars my-auto fa-lg"></i>
+                                        </span>
+                                        <hr class="w-100" />
+                                    </div>
+                                    
+                                    <!------------- CHARACTER PERSONALITY STATS------------->
+                                    
+                                    <div class="row">
+                                        <!-- ATTITUDE -->
+                                        <div class="col-12 col-lg-4 p-1 pl-4 pb-4">
+                                            <div class="row no-gutters">
+                                                <div class="col-auto align-items-center justify-content-center">
+                                                    <div class="d-flex justify-content-center align-items-center mr-2 text-muted rounded" style="height: 40px; width: 40px; background: #008282;">
+                                                        <i class="fal fa-masks-theater fa-fw" style="color: #fff; font-size: 22px;"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-uppercase">
+                                                    <p class="mb-n1" style="font-size: 16px;">
+                                                        Extrovert
+                                                    </p>
+                                                    <span class="pt-1" style="color: #02abab; font-size: 12px;">
+                                                        Attitude
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- COMPOSURE -->
+                                        <div class="col-12 col-lg-4 p-1 pl-4 pb-3">
+                                            <div class="row no-gutters">
+                                                <div class="col-auto align-items-center justify-content-center">
+                                                    <div class="d-flex justify-content-center align-items-center mr-2 text-muted rounded" style="height: 40px; width: 40px; background: #008282;">
+                                                        <i class="fal fa-handshake fa-fw" style="color: #fff; font-size: 22px;"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-uppercase">
+                                                    <p class="mb-n1" style="font-size: 16px;">
+                                                        Emotional
+                                                    </p>
+                                                    <span class="pt-1" style="color: #02abab; font-size: 12px;">
+                                                        Composure
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- OUTLOOK -->
+                                        <div class="col-12 col-lg-4 p-1 pl-4 pb-3">
+                                            <div class="row no-gutters">
+                                                <div class="col-auto align-items-center justify-content-center">
+                                                    <div class="d-flex justify-content-center align-items-center mr-2 text-muted rounded" style="height: 40px; width: 40px; background: #008282;">
+                                                        <i class="fal fa-glass-water fa-fw" style="color: #fff; font-size: 22px;"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-uppercase">
+                                                    <p class="mb-n1" style="font-size: 16px;">
+                                                        Optimist
+                                                    </p>
+                                                    <span class="pt-1" style="color: #02abab; font-size: 12px;">
+                                                        Outlook
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!------------- STRENGTHS / WEAKNESSES ------------->
+
+                                    <div class="row no-gutters mt-2 mb-lg-0 mt-lg-0">
+                                        <div class="col-12 col-md-7 col-12 p-1 pr-0 pr-4">
+                                            <p class="mb-n2 pb-2" style="font-size: 16px; font-weight: bold; color: #02abab;">
+                                                <i class="far fa-dumbbell"></i>
+
+                                                STRENGTHS
+                                            </p>
+                                            <p class="text-justify">
+                                                Vestibulum scelerisque elit vitae facilisis pretium. Integer et augue neque. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                            </p>
+
+                                            <p class="mb-n2 pb-2 text-right" style="font-size: 16px; font-weight: bold; color: #02abab;">
+                                                <i class="far fa-bone-break"></i>
+
+                                                WEAKNESSES
+                                            </p>
+                                            <p class="text-justify">
+                                                Vestibulum scelerisque elit vitae facilisis pretium. Integer et augue neque. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                            </p>
+                                        </div>
+
+                                        <!------------- STANDALONE/ADJUSTABLE STATS - use 'fas' for solid and 'fal' for empty ------------->
+                                        
+                                        <div class="card col-12 col-lg-5 p-2 mb-2 mt-3 mt-lg-0" style="font-size: 14px; font-weight: bold;">
+                                            <p class="mb-n2 pb-2 text-center" style="font-size: 16px; font-weight: bold;">
+                                                - STATS -
+                                            </p>
+
+                                            <!-- COURAGE STAT -->
+                                            <div class="row no-gutters align-items-center pb-1 text-uppercase">
+                                                <i class="fa-regular fa-sword fa-lg mr-2 fa-fw" style="color: #02abab;"></i>
+                                                Courage
+
+                                                <div class="col justify-content-end">
+                                                    <div class="row no-gutters">
+                                                        <!------------- STATS------------->
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- TEMPER STAT -->
+                                            <div class="row no-gutters align-items-center pb-1 text-uppercase">
+                                                <i class="fa-regular fa-fire fa-lg mr-2 fa-fw" style="color: #02abab;"></i>
+                                                Temper
+
+                                                <div class="col justify-content-end">
+                                                    <div class="row no-gutters">
+                                                        <!------------- STATS------------->
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- KINDNESS STAT -->
+                                            <div class="row no-gutters align-items-center pb-1 text-uppercase">
+                                                <i class="fa-regular fa-hand-holding-heart fa-lg mr-2 fa-fw" style="color: #02abab;"></i>
+                                                Kindness
+
+                                                <div class="col justify-content-end">
+                                                    <div class="row no-gutters">
+                                                        <!------------- STATS------------->
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- CHARISMA STAT -->
+                                            <div class="row no-gutters align-items-center pb-1 text-uppercase">
+                                                <i class="fa-regular fa-cards fa-lg mr-2 fa-fw" style="color: #02abab;"></i>
+                                                Charisma
+
+                                                <div class="col justify-content-end">
+                                                    <div class="row no-gutters">
+                                                        <!------------- STATS------------->
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- INTELLECT STAT -->
+                                            <div class="row no-gutters align-items-center pb-1 text-uppercase">
+                                                <i class="fa-regular fa-head-side-brain fa-lg mr-2 fa-fw" style="color: #02abab;"></i>
+                                                Intellect
+
+                                                <div class="col justify-content-end">
+                                                    <div class="row no-gutters">
+                                                        <!------------- STATS------------->
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- HONESTY STAT -->
+                                            <div class="row no-gutters align-items-center pb-1 text-uppercase">
+                                                <i class="fa-regular fa-book fa-lg mr-2 fa-fw" style="color: #02abab;"></i>
+                                                Honesty
+
+                                                <div class="col justify-content-end">
+                                                    <div class="row no-gutters">
+                                                        <!------------- STATS------------->
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- LOYALTY STAT -->
+                                            <div class="row no-gutters align-items-center pb-1 text-uppercase">
+                                                <i class="fa-regular fa-heart-half-stroke fa-lg mr-2 fa-fw" style="color: #02abab;"></i>
+                                                Loyalty
+
+                                                <div class="col justify-content-end">
+                                                    <div class="row no-gutters">
+                                                       <!------------- STATS------------->
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- PATIENCE STAT -->
+                                            <div class="row no-gutters align-items-center pb-1 text-uppercase">
+                                                <i class="fa-regular fa-clock fa-lg mr-2 fa-fw" style="color: #02abab;"></i>
+                                                Patience
+
+                                                <div class="col justify-content-end">
+                                                    <div class="row no-gutters">
+                                                        <!------------- STATS------------->
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fas fa-hexagon fa-fw"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                        <i class="fal fa-hexagon fa-fw fa-fade" style="animation-duration: 3s;"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 p-0">
+                                    <div class="row no-gutters">
+                                        <div class="col mr-n3" style="border-radius: 0 0 6em 0; background: #008282;">
+                                            <div class="row no-gutters" style="min-height: 57px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+<!------------- 
+
+TAB THREE - APPERANCE TAB
+
+------------->
+                            <div class="tab-pane fade"  id="refs">
+                                <!------------- HEADER ------------->
+                                <div class="p-0 bg-faded" style="height: 68px; border-radius: 0 0 0;">
+                                    <div class="row no-gutters">
+                                        <div class="col align-items-center justify-content-center" style="border-radius: 0 0 0 0; background: #008282; text-shadow: 0.15rem 0.15rem 0rem #015c5c;">
+                                            <p class="text-white text-uppercase font-weight-bold font-family:berlin-sans; m-2 display-4">
+                                                APPEARANCE
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------- HEADER END ------------->
+                                <div class="col-md-12 bg-faded" style="height: 484px; overflow: auto; margin-right:210px">
+                                      <div class="row no-gutters">
+                                        <div class="col-md-6 col-12 p-1">
+                                            <div class="col p-1" style="height: 290px; position: sticky; top: 0px;">
+                                                
+                                                <!-- CHARACTER REFERENCE IMAGE - replace 'URLHERE' -->
+                                                <div
+                                                    class="card h-100 border-0 bg-faded"
+                                                    style="
+                                                        background-image: url(https://picsum.photos/2000/1500);
+                                                        background-size: cover;
+                                                        background-position: top;
+                                                    "
+                                                ></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12 p-1">
+                                            <p class="p-0 mb-0" style="font-size: 18px; font-variant: small-caps; font-weight: bold;">
+                                                <i class="far fa-paintbrush mr-2" style="color: #02abab;"></i>
+
+                                                DESIGN NOTES
+                                            </p>
+
+                                            <ul class="list-group ml-4">
+                                                <!-- LIST ITEM -->
+                                                <li style="font-size: 12px;">
+                                                    Lorem ipsum dolor sit amet, consec adipiscing elit.
+                                                </li>
+
+                                                <!-- LIST ITEM -->
+                                                <li style="font-size: 12px;">
+                                                    Lorem ipsum dolor sit amet, consec adipiscing elit.
+                                                </li>
+
+                                                <!-- LIST ITEM -->
+                                                <li style="font-size: 12px;">
+                                                    Lorem ipsum dolor sit amet, consec adipiscing elit.
+                                                </li>
+
+                                                <!-- LIST ITEM -->
+                                                <li style="font-size: 12px;">
+                                                    Lorem ipsum dolor sit amet, consec adipiscing elit.
+                                                </li>
+
+                                                <!-- LIST ITEM -->
+                                                <li style="font-size: 12px;">
+                                                    Lorem ipsum dolor sit amet, consec adipiscing elit.
+                                                </li>
+                                                <!-- YOU CAN ADD MORE ABOVE THIS -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- COLOR PALLET -->
+                                    <div class="col-12 flex-column p-1 mb-1">
+                                        <div class="row no-gutters" style="height: 40px;">
+                                            <!-- PALETTE COLOR ONE-->
+                                            <div class="col p-1 h-100">
+                                                <div class="h-100 align-items-center justify-content-center" style="background-color: #ccc;">
+                                                    <i class="tooltipster fal fa-eye" style="color: #222;" title="Eyes"></i>
+                                                </div>
+                                            </div>
+
+                                            <!-- PALETTE COLOR TWO-->
+                                            <div class="col p-1 h-100">
+                                                <div class="h-100 align-items-center justify-content-center" style="background-color: #ccc;">
+                                                    <i class="tooltipster fal fa-hand" style="color: #222;" title="Skin"></i>
+                                                </div>
+                                            </div>
+
+                                            <!-- PALETTE COLOR THREE-->
+                                            <div class="col p-1 h-100">
+                                                <div class="h-100 align-items-center justify-content-center" style="background-color: #ccc;">
+                                                    <i class="tooltipster fal fa-wind" style="color: #222;" title="Hair"></i>
+                                                </div>
+                                            </div>
+
+                                            <!-- PALETTE COLOR FOUR-->
+                                            <div class="col p-1 h-100">
+                                                <div class="h-100 align-items-center justify-content-center" style="background-color: #ccc;">
+                                                    <i class="tooltipster fal fa-circle" style="color: #222;" title="Extra1"></i>
+                                                </div>
+                                            </div>
+
+                                            <!-- PALETTE COLOR FOUR-->
+                                            <div class="col p-1 h-100">
+                                                <div class="h-100 align-items-center justify-content-center" style="background-color: #ccc;">
+                                                    <i class="tooltipster fal fa-circle" style="color: #222;" title="Extra2"></i>
+                                                </div>
+                                            </div>
+
+                                            <!-- PALETTE COLOR FIVE-->
+                                            <div class="col p-1 h-100">
+                                                <div class="h-100 align-items-center justify-content-center" style="background-color: #ccc;">
+                                                    <i class="tooltipster fal fa-circle" style="color: #222;" title="Extra3"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- APPEARANCE STATS -->
+                                    
+                                    <div class="card col-12 mb-3" style="font-size: 14px; font-weight: bold;">
+                                        <div class="row no-gutters py-2">
+                                            <div class="col-lg-6 mb-lg-0 mb-1 flex-column">
+                                                <div class="card rounded-0 border-0 d-flex flex-fill">
+                                                    <!-- HEIGHT -->
+                                                    <div class="row no-gutters align-items-center text-uppercase pr-3">
+                                                        <i class="fa-regular fa-ruler fa-fw mr-2" style="color: #02abab;"></i>
+
+                                                        Height
+
+                                                        <div class="col justify-content-end">
+                                                            content
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- BODY TYPE -->
+                                                    <div class="row no-gutters align-items-center text-uppercase pr-3">
+                                                        <i class="fa-regular fa-person fa-fw mr-2" style="color: #02abab;"></i>
+
+                                                        Body Type
+
+                                                        <div class="col justify-content-end">
+                                                            content
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- HORNS -->
+                                                    <div class="row no-gutters align-items-center text-uppercase pr-3">
+                                                        <i class="fa-regular fa-skull-cow fa-fw mr-2" style="color: #02abab;"></i>
+
+                                                        Horn Type
+
+                                                        <div class="col justify-content-end">
+                                                            content
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- POSTURE -->
+                                                    <div class="row no-gutters align-items-center text-uppercase pr-3">
+                                                        <i class="fa-regular fa-person-walking fa-fw mr-2" style="color: #02abab;"></i>
+
+                                                        Posture
+
+                                                        <div class="col justify-content-end">
+                                                            content
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 px-1">
+                                                
+                                                <!-- HAIRSTYLE -->
+                                                <div class="row no-gutters align-items-center text-uppercase">
+                                                    <i class="fa-regular fa-user-hair-mullet fa-fw mr-2" style="color: #02abab;"></i>
+
+                                                    Hair Style
+
+                                                    <div class="col justify-content-end">
+                                                        content
+                                                    </div>
+                                                </div>
+
+                                                <!-- CLOTHING STYLE -->
+                                                <div class="row no-gutters align-items-center text-uppercase">
+                                                    <i class="fa-regular fa-shirt fa-fw mr-2" style="color: #02abab;"></i>
+
+                                                    Clothing Style
+
+                                                    <div class="col justify-content-end">
+                                                        content
+                                                    </div>
+                                                </div>
+
+                                                <!-- AESTHETIC -->
+                                                <div class="row no-gutters align-items-center text-uppercase">
+                                                    <i class="fa-regular fa-image fa-fw mr-2" style="color: #02abab;"></i>
+
+                                                    Aesthetic
+
+                                                    <div class="col justify-content-end">
+                                                        content
+                                                    </div>
+                                                </div>
+
+                                                <!-- VOICECLAIM -->
+                                                <div class="row no-gutters align-items-center text-uppercase">
+                                                    <i class="fa-regular fa-microphone fa-fw mr-2" style="color: #02abab;"></i>
+
+                                                    Voiceclaim
+
+                                                    <div class="col justify-content-end">
+                                                        content
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 p-0 pt-2 bg-faded" style="border-radius: 0 0 6em 0;">
+                                    <div class="row no-gutters">
+                                        <div class="col mr-n3" style="border-radius: 0 0 6em 0; background: #008282;">
+                                            <div class="row no-gutters" style="min-height: 60px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+<!------------- 
+
+TAB FOUR - STRIFE TAB
+
+------------->
+                            <div class="tab-pane fade" id="strife">
+                                <!------------- HEADER ------------->
+                                <div class="p-0 bg-faded" style="height: 68px; border-radius: 0 5em 0 0;">
+                                    <div class="row no-gutters">
+                                        <div class="col align-items-center justify-content-center" style="border-radius: 0 0 0 0; background: #008282; text-shadow: 0.15rem 0.15rem 0rem #015c5c;">
+                                            <p class="text-white text-uppercase font-weight-bold font-family:berlin-sans; m-2 display-4">
+                                                Strife
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------- HEADER END ------------->
+                                <div class="col-md-12 bg-faded pl-3 pr-3" style="height: 492px; overflow: auto;">
+                                    <p class="p-0 mb-0" style="font-size: 2em; font-variant: small-caps; font-weight: bold;">
+                                        <!------------- CHARACTER IMAGE - adjust 'max-height: 250px;' to fit your image size ------------->
+                                        <img
+                                            src="https://picsum.photos/1000"
+                                            class="float-md-left pr-md-3 mb-0 d-block mx-auto card border-0 rounded-0"
+                                            style="background: none; max-height: 250px; z-index: 10;"
+                                        />
+
+                                        <i class="far fa-moon-stars" style="color: #02abab;"></i>
+
+                                        GODTEIR - SEER OF MIND
+                                    </p>
+
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet, consec ctetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio. Donec accumsan tempor lacus, et venenatis elit feugiat non. Duis porta eros
+                                        et velit blandit dapibus. Curabitur ac finibus eros. Duis placerat velit vitae massa sodales.
+                                    </p>
+
+                                    <p class="text-justify">
+                                        Lorem ipsum dolor sit amet, consec ctetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio. Donec accumsan tempor lacus, et venenatis elit feugiat non.
+                                    </p>
+
+                                    <!-- DIVIDER -->
+
+                                    <div class="justify-content-between my-2">
+                                        <hr class="w-100" />
+                                        <span class="col pt-2 px-3 py-0">
+                                            <i class="fa-solid fa-moon-stars my-auto fa-lg"></i>
+                                        </span>
+                                        <hr class="w-100" />
+                                    </div>
+
+                                    <div class="col-md-12 p-1 pb-3">
+                                        <img
+                                            src="https://cdn.discordapp.com/attachments/1056747900262166590/1073069638868541500/Strifecard_2.webp"
+                                            class="float-md-left pr-md-3 mb-0 d-block mx-auto card border-0 rounded-0"
+                                            style="background: none; max-height: 100px; z-index: 10;"
+                                        />
+
+                                        <p class="mb-n2 pb-2 text-uppercase" style="font-size: 16px; font-weight: bold; color: #02abab;">
+                                            <i class="far fa-sword"></i>
+
+                                            Strife Specibus
+                                        </p>
+                                        <p class="text-justify">
+                                            Vestibulum scelerisque elit vitae facilisis pretium. Integer et augue neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in
+                                            faucibus.
+                                        </p>
+
+                                        <img
+                                            src="https://f2.toyhou.se/file/f2-toyhou-se/images/54023927_cS1zT3H81FejURY.png"
+                                            class="float-md-right pl-md-3 mb-0 d-block mx-auto card border-0 rounded-0"
+                                            style="background: none; max-height: 100px; z-index: 10;"
+                                        />
+
+                                        <p class="mb-n2 pb-2 text-right text-uppercase" style="font-size: 16px; font-weight: bold; color: #02abab;">
+                                            <i class="far fa-floppy-disk"></i>
+
+                                            Fetch Modus
+                                        </p>
+                                        <p class="text-justify">
+                                            Vestibulum scelerisque elit vitae facilisis pretium. Integer et augue neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in
+                                            faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 p-0">
+                                    <div class="row no-gutters">
+                                        <div class="col mr-n3" style="border-radius: 0 0 6em 0; background: #008282;">
+                                            <div class="row no-gutters" style="min-height: 60px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+<!------------- 
+
+TAB FIVE - STORY TAB
+
+------------->
+                            <div class="tab-pane fade" id="story">
+                                <!------------- HEADER ------------->
+                                <div class="p-0 bg-faded" style="height: 68px; border-radius: 0 5em 0 0;">
+                                    <div class="row no-gutters">
+                                        <div class="col align-items-center justify-content-center" style="border-radius: 0 0 0 0; background: #008282; text-shadow: 0.15rem 0.15rem 0rem #015c5c;">
+                                            <p class="text-white text-uppercase font-weight-bold font-family:berlin-sans; m-2 display-4">
+                                                Story
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------- HEADER END ------------->
+
+                                <div class="col-md-12 pl-3 pr-3 pb-4 bg-faded" style="height: 492px; overflow: auto;">
+                                    
+                                    <!------------- STORY PART 1------------->
+                                    <div class="text-justify">
+                                        <p class="p-0 pb-1 mb-0" style="font-size: 2em; font-variant: small-caps; font-weight: bold;">
+                                            <i class="far fa-bookmark" style="color: #02abab;"></i>
+
+                                            SUBHEADER I
+                                        </p>
+
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio. Donec accumsan tempor lacus, et venenatis elit feugiat non. Duis porta
+                                            eros et velit blandit dapibus.
+                                        </p>
+
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio. Donec accumsan tempor lacus, et venenatis elit feugiat non. Duis porta
+                                            eros et velit blandit dapibus. Curabitur ac finibus eros. Duis placerat velit vitae massa sodales, eget mattis nibh pellentesque.
+                                        </p>
+
+                                        <!-- YOU CAN ADD MORE PARAGRAPHS ABOVE THIS LINE -->
+                                    </div>
+
+                                    <!-- DIVIDER -->
+
+                                    <div class="justify-content-between my-2">
+                                        <hr class="w-100" />
+                                        <span class="col pt-2 px-3 py-0">
+                                            <i class="fa-solid fa-moon-stars my-auto fa-lg"></i>
+                                        </span>
+                                        <hr class="w-100" />
+                                    </div>
+                                    
+                                    <!------------- STORY PART 2 ------------->
+                                    <div class="text-justify">
+                                        <p class="pb-1 mb-0 text-right" style="font-size: 2em; font-variant: small-caps; font-weight: bold;">
+                                            <i class="far fa-bookmark" style="color: #02abab;"></i>
+
+                                            SUBHEADER II
+                                        </p>
+
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio. Donec accumsan tempor lacus, et venenatis elit feugiat non. Duis porta
+                                            eros et velit blandit dapibus. Curabitur ac finibus eros. Duis placerat velit vitae massa sodales, eget mattis nibh pellentesque.
+                                        </p>
+
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio.
+                                        </p>
+
+                                        <!-- YOU CAN ADD MORE PARAGRAPHS ABOVE THIS LINE -->
+                                    </div>
+
+                                    <!-- DIVIDER -->
+
+                                    <div class="justify-content-between my-2">
+                                        <hr class="w-100" />
+                                        <span class="col pt-2 px-3 py-0">
+                                            <i class="fa-solid fa-moon-stars my-auto fa-lg"></i>
+                                        </span>
+                                        <hr class="w-100" />
+                                    </div>
+                                    
+                                    <!------------- STORY PART 3 ------------->
+                                    <div class="text-justify">
+                                        <p class="p-0 pb-1 mb-0" style="font-size: 2em; font-variant: small-caps; font-weight: bold;">
+                                            <i class="far fa-bookmark" style="color: #02abab;"></i>
+
+                                            SUBHEADER III
+                                        </p>
+
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio. Donec accumsan tempor lacus, et venenatis elit feugiat non. Duis porta
+                                            eros et velit blandit dapibus. Curabitur ac finibus eros. Duis placerat velit vitae massa sodales, eget mattis nibh pellentesque.
+                                        </p>
+
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio. Donec accumsan tempor lacus, et venenatis elit feugiat non. Duis porta
+                                            eros et velit blandit dapibus. Curabitur ac finibus eros. Duis placerat velit vitae massa sodales, eget mattis nibh pellentesque.
+                                        </p>
+
+                                        <!-- YOU CAN ADD MORE PARAGRAPHS ABOVE THIS LINE-->
+                                    </div>
+                                </div>
+
+                                <div class="col-12 p-0">
+                                    <div class="row no-gutters">
+                                        <div class="col mr-n3" style="border-radius: 0 0 6em 0; background: #008282;">
+                                            <div class="row no-gutters" style="min-height: 60px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+<!------------- 
+
+TAB SIX - RELATIONSHIPS TAB
+
+------------->
+                            <div class="tab-pane fade" id="relationships">
+                                <!------------- HEADER ------------->
+                                <div class="p-0 bg-faded" style="height: 68px; border-radius: 0 5em 0 0;">
+                                    <div class="row no-gutters">
+                                        <div class="col align-items-center justify-content-center" style="border-radius: 0 0 0 0; background: #008282; text-shadow: 0.15rem 0.15rem 0rem #015c5c;">
+                                            <p class="text-white text-uppercase font-weight-bold font-family:berlin-sans; m-2 display-4">
+                                                Relationships
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------- HEADER END ------------->
+                                
+                                <div class="col-md-12 pl-3 pr-3 pb-4 bg-faded" style="height: 492px; overflow: auto;">
+                                    
+                                    <!-- CHARACTER ONE - MATESPRIT--------------------------->
+                                    <div class="row no-gutters mt-2 pb-2">
+                                        
+                                        <!-- AVATAR - REPLACE 'URLHERE' -->
+                                        <div class="col-4">
+                                            <img
+                                                src="https://picsum.photos/1000"
+                                                class="img-thumbnail rounded-1 p-2"
+                                                style="height: 175px; object-fit: cover; border-color: #bf0000;"
+                                            />
+
+                                            <i class="fas fa-heart fa-3x" style="position: absolute; top: -0.4rem; left: -0.9rem; color: #bf0000;"></i>
+                                        </div>
+                                        <div class="col-8 p-2 text-justify">
+                                            
+                                            <!-- NAME LINK -->
+                                            <div class="mb-0 p-0">
+                                                <a href="URLHERE" style="font-size: 2em; font-variant: small-caps; font-weight: bold;">
+                                                    
+                                                    CHARACTER NAME
+                                                    
+                                                </a>
+                                            </div>
+                                            <div class="text-left">
+                                                <span class="badge text-white rounded-1 mb-2 p-1 px-2 text-uppercase" style="background-color: #d43939; font-size: 0.9em;">
+                                                    Matesprit
+                                                    
+                                                    </span>
+                                                <span class="badge text-white rounded-1 mb-2 p-1 px-2 text-uppercase" style="background-color: #d43939; font-size: 0.9em;">
+                                                    
+                                                    Pro / Nouns
+                                                    
+                                                    </span>
+                                            </div>
+
+                                            <!-- SUMMARY - keep it short, it doesn't scroll. One or two sentences is best -->
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio.
+                                            </p>
+
+                                            <!-- RELATIONSHIP STATS -->
+                                            <div class="row no-gutters text-lowercase mb-1" style="font-variant: small-caps;">
+                                                
+                                                <!-- RESPECT STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        respect
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #d43939; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- TRUST STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        trust
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #d43939; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- CARING STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        caring
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #d43939; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- AFFECTION STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        affection
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #d43939; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- CHARACTER TWO - MORAIL --------------------------->
+                                    <div class="row no-gutters mt-2 pb-2">
+                                        
+                                        <!-- AVATAR - REPLACE 'URLHERE' -->
+                                        <div class="col-4">
+                                            <img
+                                                src="https://picsum.photos/1000"
+                                                class="img-thumbnail rounded-1 p-2"
+                                                style="height: 175px; object-fit: cover; border-color: #dd8483;"
+                                            />
+
+                                            <i class="fas fa-diamond fa-3x" style="position: absolute; top: -0.4rem; left: -0.9rem; color: #dd8483;"></i>
+                                        </div>
+                                        <div class="col-8 p-2 text-justify">
+                                            
+                                            <!-- NAME LINK -->
+                                            <div class="mb-0 p-0">
+                                                <a href="URLHERE" style="font-size: 2em; font-variant: small-caps; font-weight: bold;">
+                                                    CHARACTER NAME
+                                                </a>
+                                            </div>
+
+                                            <div class="text-left">
+                                                <span class="badge text-white rounded-1 mb-2 p-1 px-2 text-uppercase" style="background-color: #dd9493; font-size: 0.9em;">
+                                                    Morail
+                                                    
+                                                    </span>
+                                                <span class="badge text-white rounded-1 mb-2 p-1 px-2 text-uppercase" style="background-color: #dd9493; font-size: 0.9em;">
+                                                    
+                                                    Pro / Nouns
+                                                    
+                                                    </span>
+                                            </div>
+
+                                            <!-- SUMMARY - keep it short, it doesn't scroll. One or two sentences is best -->
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio.
+                                            </p>
+
+                                            <!-- RELATIONSHIP STATS -->
+                                            
+                                            <div class="row no-gutters text-lowercase mb-1" style="font-variant: small-caps;">
+                                                
+                                                <!-- RESPECT STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        respect
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #dd9493; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- TRUST STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        trust
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #dd9493; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- CARING STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        caring
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #dd9493; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- AFFECTION STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        affection
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #dd9493; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- CHARACTER THREE - KISMESIS--------------------------->
+                                    <div class="row no-gutters mt-2 pb-2">
+                                        
+                                        <!-- AVATAR - REPLACE 'URLHERE' -->
+                                        <div class="col-4">
+                                            <img
+                                                src="https://picsum.photos/1000"
+                                                class="img-thumbnail rounded-1 p-2"
+                                                style="height: 175px; object-fit: cover; border-color: #000000;"
+                                            />
+
+                                            <i class="fas fa-spade fa-3x" style="position: absolute; top: -0.4rem; left: -0.9rem; color: #000000;"></i>
+                                        </div>
+                                        <div class="col-8 p-2 text-justify">
+                                            
+                                            <!-- NAME LINK -->
+                                            <div class="mb-0 p-0">
+                                                <a href="URLHERE" style="font-size: 2em; font-variant: small-caps; font-weight: bold;">
+                                                    CHARACTER NAME
+                                                </a>
+                                            </div>
+
+                                            <div class="text-left">
+                                                <span class="badge text-white rounded-1 mb-2 p-1 px-2 text-uppercase" style="background-color: #121212; font-size: 0.9em;">
+                                                    Kismesis
+                                                    
+                                                    </span>
+                                                <span class="badge text-white rounded-1 mb-2 p-1 px-2 text-uppercase" style="background-color: #121212; font-size: 0.9em;">
+                                                    Pro / Nouns
+                                                    
+                                                    </span>
+                                            </div>
+
+                                            <!-- SUMMARY - keep it short, it doesn't scroll. One or two sentences is best -->
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio.
+                                            </p>
+
+                                            <!-- RELATIONSHIP STATS -->
+                                            <div class="row no-gutters text-lowercase mb-1" style="font-variant: small-caps;">
+                                                
+                                                <!-- RESPECT STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        respect
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #121212; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- TRUST STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        trust
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #121212; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- CARING STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        caring
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #121212; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- AFFECTION STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        affection
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #121212; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- CHARACTER FOUR - AUSPISTICE--------------------------->
+                                    <div class="row no-gutters mt-2 pb-2">
+                                        
+                                        <!-- AVATAR - REPLACE 'URLHERE' -->
+                                        <div class="col-4">
+                                            <img
+                                                src="https://picsum.photos/1000"
+                                                class="img-thumbnail rounded-1 p-2"
+                                                style="height: 175px; object-fit: cover; border-color: #9f9f9f;"
+                                            />
+
+                                            <i class="fas fa-club fa-3x" style="position: absolute; top: -0.4rem; left: -0.9rem; color: #9f9f9f;"></i>
+                                        </div>
+                                        <div class="col-8 p-2 text-justify">
+                                            
+                                            <!-- NAME LINK -->
+                                            <div class="mb-0 p-0">
+                                                <a href="URLHERE" style="font-size: 2em; font-variant: small-caps; font-weight: bold;">
+                                                    CHARACTER NAME
+                                                </a>
+                                            </div>
+
+                                            <div class="text-left">
+                                                <span class="badge text-white rounded-1 mb-2 p-1 px-2 text-uppercase" style="background-color: #b3b3b3; font-size: 0.9em;">
+                                                    Auspistice
+                                                    
+                                                    </span>
+                                                <span class="badge text-white rounded-1 mb-2 p-1 px-2 text-uppercase" style="background-color: #b3b3b3; font-size: 0.9em;">
+                                                    Pro / Nouns
+                                                    
+                                                    </span>
+                                            </div>
+
+                                            <!-- SUMMARY - keep it short, it doesn't scroll. One or two sentences is best -->
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio.
+                                            </p>
+
+                                            <!-- RELATIONSHIP STATS -->
+                                            <div class="row no-gutters text-lowercase mb-1" style="font-variant: small-caps;">
+                                                
+                                                <!-- RESPECT STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        respect
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #b3b3b3; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- TRUST STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        trust
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #b3b3b3; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- CARING STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        caring
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #b3b3b3; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- AFFECTION STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        affection
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #b3b3b3; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- CHARACTER FIVE - LUSUS--------------------------->
+                                    <div class="row no-gutters mt-2 pb-2">
+                                        
+                                        <!-- AVATAR - REPLACE 'URLHERE' -->
+                                        <div class="col-4">
+                                            <img
+                                                src="https://picsum.photos/1000"
+                                                class="img-thumbnail rounded-1 p-2"
+                                                style="height: 175px; object-fit: cover; border-color: #008282;"
+                                            />
+                                        </div>
+                                        <div class="col-8 p-2 text-justify">
+                                            
+                                            <!-- NAME LINK -->
+                                            <div class="mb-0 p-0">
+                                                <a href="URLHERE" style="font-size: 2em; font-variant: small-caps; font-weight: bold;">
+                                                    LUSUS NAME
+                                                </a>
+                                            </div>
+
+                                            <div class="text-left">
+                                                <span class="badge text-white rounded-1 mb-2 p-1 px-2 text-uppercase" style="background-color: #008282; font-size: 0.9em;">
+                                                    Lusus
+                                                    
+                                                    </span>
+                                                <span class="badge text-white rounded-1 mb-2 p-1 px-2 text-uppercase" style="background-color: #008282; font-size: 0.9em;">
+                                                    
+                                                    Species
+                                                    
+                                                    </span>
+                                            </div>
+
+                                            <!-- SUMMARY - keep it short, it doesn't scroll. One or two sentences is best -->
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio.
+                                            </p>
+
+                                            <!-- RELATIONSHIP STATS -->
+                                            <div class="row no-gutters text-lowercase mb-1" style="font-variant: small-caps;">
+                                                
+                                                <!-- RESPECT STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        respect
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #008282; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- TRUST STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        trust
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #008282; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- CARING STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        caring
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #008282; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- AFFECTION STAT -->
+                                                <div class="col-12 col-lg-6 p-1">
+                                                    <p class="text-center">
+                                                        
+                                                        affection
+                                                        
+                                                    </p>
+                                                    <div class="progress rounded-0" style="height: 4px;">
+                                                        <!-- PROGRESS BAR VALUE == Change 50% to 1-100% -->
+                                                        
+                                                        <div class="progress-bar" style="background-color: #008282; width: 50%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- YOU CAN ADD MORE RELATIONSHIPS ABOVE THIS LINE -->
+                                </div>
+
+                                <div class="col-12 p-0">
+                                    <div class="row no-gutters">
+                                        <div class="col mr-n3" style="border-radius: 0 0 6em 0; background: #008282;">
+                                            <div class="row no-gutters" style="min-height: 60px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+<!-- END OF CODE -->
+  <!--- CREDIT - please do not remove --->
+        <div class="text-right" style="font-size: 1.5em;">
+        <a href="https://toyhou.se/reanimatedcowboy" style="color:#008282" data-toggle="tooltip" data-placement="bottom" title="code by reanimatedcowboy">
+        <i class="fa fa-code"></i>
+    </a>
+  </div>
+</div>
